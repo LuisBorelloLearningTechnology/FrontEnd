@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="prueba_HTML5_Formularios.js"></script>
+</head>
+<body>
+<section>
+<form name ="formulario1" id="idFormulario1" method="get">
+  text1 : &nbsp;   <input type="text" placeholder="Nombre"  name="texto1"  id="id_texto1" maxlength="5" autocomplete="Off">
+    <input type="number" placeholder="Solo numeros"  max="200" min="20" name="texto2" id="id_texto2" required maxlength="5" >
+    <input list="browsers" name="txtbroesers">
+
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+
+    <input type="submit" value="Enviar info" >
+    <table id="tabla1">
+
+    </table>
+</form>
+
+fuero  de formulario Nombre : &nbsp;   <input type="text" placeholder="Nombre"  name="texto3" id="id_texto3" form="formulario1" >
+</section>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="eventoinvalido.css">
+    <script src="eventoInvalid.js"></script>
+
+    <</head>
+<body>
+<form id="dato_usuario" name="dato_usuario" method="get">
+
+    Nombre:&nbsp;&nbsp      <input type="text" pattern="[A-Za-z]{3,10}" value="" name="usuario" id="usuario" title="se excedio el largo" ><br>
+    Nombre Largo:&nbsp;&nbsp   <input type="text" name="nombre" id="nombre" required maxlength="5"><br>
+    Password:&nbsp;&nbsp    <input type="password" name="pw" pattern=".{6,}" title="Six or more characters"><br>
+    Email:&nbsp;&nbsp       <input type="email" name="correo" id="correo" placeholder="Correo del usuario" maxlength="50"><br>
+    Edad:&nbsp;&nbsp            <input id="edad"  style="width:400px" name="edad" type="range" step="5" min="0" max="60" value="30"><br>
+    Edad Valor:&nbsp;&nbsp           <output id="rango" name="rango">0 a 30</output>
+                <input type="submit" id="enviar" name="enviar">
+</form>
+
+<img src="propiedades.png" height="3000" width="4000"/>
+</body>
+</html>
